@@ -1,1 +1,1 @@
-export const foo = "bar";
+export { octokit } from "./src/octokit";
