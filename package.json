@@ -2,9 +2,10 @@
   "name": "db-man",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/xx7y7xx/db-man/issues"
   },
-  "homepage": "https://github.com/xx7y7xx/db-man#readme"
+  "homepage": "https://github.com/xx7y7xx/db-man#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7"
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.12.0",
+    "js-base64": "^3.7.2"
+  }
 }
